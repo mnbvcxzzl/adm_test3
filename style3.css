@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: Inter-L; 
+	src: url("assets/Inter-Light.otf");
+}
+@font-face {
+	font-family: PressStart2P; 
+	src: url("assets/PressStart2P-Regular.ttf");
+}
+@font-face {
+	font-family: Inter-SB; 
+	src: url("assets/Inter-SemiBold.otf");
+}
+body {
+	font-family: Inter-L;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 10px #000;
+	
+	background: linear-gradient(#1A1411, #916320) fixed;
+/*	background-color: #1A1411;*/
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: auto;
+	margin: 0px;
+}
+.head1{
+	background-color: rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(0.1rem);
+	width: auto;
+}
+.yourbasket {
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+.container {
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.object1 {
+	max-width: 950px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+h1 {
+	font-family: Inter-SB;
+	font-size: 30px;
+}
+h2 {
+	font-family: Inter-SB;
+	font-size: 23px;
+}
+.text1 {
+	font-size: 16px;
+}
+.logo {
+	font-family: PressStart2P;
+	font-size: 20px;
+}
+.pic1 {
+	border-radius: 13px;
+	background: url("assets/6.jpeg");
+	background-size: 115%;
+	background-position: center center; 
+	height: 250px;
+	width: 250px;
+	box-shadow:0 0 20px #000;
+}
+.pic2 {
+	border-radius: 13px;
+	background: url("assets/2.png");
+	background-size: 115%;
+	background-position: center center; 
+	height: 250px;
+	width: 250px;
+	box-shadow:0 0 20px #000;
+}
+.pic3 {
+	border-radius: 13px;
+	background: url("assets/5.jpeg");
+	background-size: 125%;
+	background-position: center center; 
+	height: 250px;
+	width: 250px;
+	box-shadow:0 0 20px #000;
+}
+.button {
+	width: 350px;
+	font-family: Inter-L;
+	font-size: 20px;
+	letter-spacing: 3px;
+	text-align: center;
+	background-color: rgba(0, 210, 172, 0.8);
+	backdrop-filter: blur(0.2rem);
+	border-radius: 7px;
+	padding: 10px;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+	text-shadow: none;
+	transition: 0.5s;
+	margin-top: 60px;
+	margin-bottom: 120px;
+}
+.button:hover {
+	background-color: rgba(148, 245, 228, 0.8);
+	color: #1A1411; 
+	box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+	width: 360px;
+	padding: 12px;
+}
+.button:active {
+	background-color: rgba(12, 100, 84, 0.8);
+	color: white; 
+}
+.ftr {
+	background: url("assets/CraftMasters.png");
+	background-color: #1A1411;
+	background-repeat: no-repeat;
+	background-position: center center; 
+	height: 170px;
+	padding-top: 30px;
+	font-size: 16px;
+	width: 100%;
+}
+.ftr1 {
+	max-width: 850px;
+}
+.line  {
+ border-top: 4px dotted rgba(255, 255, 255, 0.5); /* Параметры линии */
+ margin: 15px 16% 15px 16%;
+}
+.btn1 {
+	transition: 0.5s;
+}
+.btn1:hover {
+	color: rgb(0, 210, 172); 
+}
+.btn1:active {
+	color: rgb(12, 100, 84); 
+}
+.btn2 {
+	transition: 0.5s;
+}
+.btn2:hover {
+	color: rgb(0, 210, 172); 
+	text-shadow: 0px 0px 15px white;
+	font-size: 23px;
+}
+.btn2:active {
+	color: rgb(12, 100, 84); 
+}
+/*--------------------ПОДКЛЮЧЕННЫЙ-----------------------*/
+#snow-animation-container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* base style */
+.stepper{
+  display: inline-block;
+  max-width: 120px;
+  width: 100%;
+  position: relative;
+}
+
+.stepper__input{
+  width: 80%;
+  height: 50px;
+  padding: .375rem .75rem;
+/*  border: 1px solid #c4c4c4;*/
+  -moz-appearance: textfield;
+	background-color: rgba(255,255,255,0.9);
+}
+
+.stepper__input:focus{
+  color: #333;
+  background-color: rgba(255,255,255,0.8);
+  border-color: #c4c4c4;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+.stepper__input::-webkit-inner-spin-button,
+.stepper__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.stepper__controls{
+
+}
+
+.stepper__controls [spinner-button="up"],
+.stepper__controls [spinner-button="down"]{
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #4dd1b9;
+  height: 50%;
+  font-size: 1.375em;
+  line-height: 0;
+  transition: all ease 0.25s;
+}
+
+.stepper__controls [spinner-button="up"]:hover,
+.stepper__controls [spinner-button="down"]:hover {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+/* style 1 */
+.stepper--style-1 .stepper__input{
+  padding-right: 3.25rem;
+}
+.stepper--style-1 .stepper__controls{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: -1px;
+  display: flex;
+  flex-direction: column;
+  width: 2.5rem;
+  z-index: 1;
+}
+.stepper--style-1 [spinner-button="up"] {
+  margin-bottom: -1px;
+}
+a {
+	color: white;
+	text-decoration: none;
+}

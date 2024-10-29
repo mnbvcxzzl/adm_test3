@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: Inter-Light; 
+	src: url("assets/Inter-Light.otf");
+}
+@font-face {
+	font-family: PressStart2P; 
+	src: url("assets/PressStart2P-Regular.ttf");
+}
+@font-face {
+	font-family: Inter-SemiBold; 
+	src: url("assets/Inter-SemiBold.otf");
+}
+body {
+	background: linear-gradient(#1A1411, #D27E00) fixed;
+/*	background-color: #1A1411;*/
+	background-attachment: scroll;
+	margin: 0px;
+}
+.panel {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(0.1rem);
+	color: white;
+	align-items: center;
+	font-size: 20px;
+	padding: 10px;
+}
+.box1 {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 350px;
+	font-family: PressStart2P;
+}
+.box2 {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 700px;
+	font-family: Inter-Light;
+}
+.box3 {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 700px;
+	font-family: Inter-Light;
+	font-size: 12px;
+	text-align: center;
+	text-shadow: 0px 0px 10px black, 0px 0px 5px black;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+.btn1:hover {
+	color: rgb(0, 210, 172); 
+}
+.btn1:active {
+	color: rgb(12, 100, 84); 
+}
+.btn2 {
+	transition: 0.5s;
+}
+.btn2:hover {
+	color: rgb(0, 210, 172); 
+	text-shadow: 0px 0px 15px white;
+	font-size: 23px;
+}
+.btn2:active {
+	color: rgb(12, 100, 84); 
+}
+.scale {
+    transition: 0.5s; /* Время эффекта */
+   }
+.scale:hover {
+	transform: scale(1.2); /* Увеличиваем масштаб */
+}
+h1 {
+	color: white;
+	font-size: 26px;
+	font-family: Inter-SemiBold;
+	text-align: center;
+	padding: 20px;
+	text-shadow: 0px 0px 15px black;
+}
+h2 {
+	color: white;
+	font-size: 24px;
+	font-family: Inter-Light;
+	text-shadow: 0px 0px 15px black;
+}
+p {
+	color: white;
+	font-size: 13px;
+	font-family: Inter-Light;
+	line-height: 2;
+	text-shadow: 0px 0px 10px black;
+}
+.sector1 {
+	display: grid;
+	grid-template-columns: 260px 750px 50px;
+	grid-template-rows: 30px 10px;
+	justify-content: center;
+	align-items: center;
+	gap: 15px 20px;
+	margin-top: 50px;
+}
+.sector2 {
+	display: grid;
+	grid-template-columns: repeat(3, 280px);
+	grid-template-rows: 400px 30px 100px;
+	justify-content: center;
+	gap: 20px 60px;
+	margin-bottom: 50px;
+}
+.rectangle {
+  height: 30px;
+  width: auto;
+  background-color: white;
+}
+.pic1 {
+	border-radius: 13px;
+	background: url("assets/1.webp");
+	background-size: cover;
+	background-position: center center; 
+}
+.pic2 {
+	border-radius: 13px;
+	background: url("assets/2.png");
+	background-size: cover;
+	background-position: center center; 
+}
+.pic3 {
+	border-radius: 13px;
+	background: url("assets/3.png");
+	background-size: cover;
+	background-position: center center; 
+}
+.pic4 {
+	border-radius: 13px;
+	background: url("assets/4.jpeg");
+	background-size: cover;
+	background-position: center center; 
+}
+.pic5 {
+	border-radius: 13px;
+	background: url("assets/5.jpeg");
+	background-size: cover;
+	background-position: center center; 
+}
+.pic6 {
+	border-radius: 13px;
+	background: url("assets/6.jpeg");
+	background-size: cover;
+	background-position: center center; 
+}
+.sector3 {
+	background: url("assets/CraftMasters.png");
+	background-color: #1A1411;
+	background-repeat: no-repeat;
+	background-position: center center; 
+	height: 170px;
+	padding-top: 30px;
+	
+	display: grid;
+	grid-template-columns: 10px 200px 300px 10px 150px;
+	grid-template-rows: repeat(4, 20px);
+	justify-content: center;
+	justify-items: start;
+	align-items: center;
+	gap: 18px 30px;
+}
+.sector3 p {
+	line-height: 1;

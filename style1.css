@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: Inter-Light; 
+	src: url("assets/Inter-Light.otf");
+}
+@font-face {
+	font-family: PressStart2P; 
+	src: url("assets/PressStart2P-Regular.ttf");
+}
+@font-face {
+	font-family: Inter-SemiBold; 
+	src: url("assets/Inter-SemiBold.otf");
+}
+body {
+	background: url("assets/background2.png");
+	background-color: #1A1411;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top; 
+	background-attachment: fixed;
+	margin: 0px;
+}
+.panel {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(0.1rem);
+	color: white;
+	align-items: center;
+	font-size: 20px;
+	padding: 10px;
+}
+.box1 {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 350px;
+	font-family: PressStart2P;
+}
+.box2 {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 700px;
+	font-family: Inter-Light;
+}
+.box3 {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 700px;
+	font-family: Inter-Light;
+	font-size: 12px;
+	text-align: center;
+	text-shadow: 0px 0px 10px black, 0px 0px 5px black;
+}
+.btn1:hover {
+	color: rgb(0, 210, 172); 
+}
+.btn1:active {
+	color: rgb(12, 100, 84); 
+}
+.btn2 {
+	transition: 0.5s;
+}
+.btn2:hover {
+	color: rgb(0, 210, 172); 
+	text-shadow: 0px 0px 15px white;
+	font-size: 23px;
+}
+.btn2:active {
+	color: rgb(12, 100, 84); 
+}
+.scale {
+    transition: 0.5s; /* Время эффекта */
+   }
+.scale:hover {
+	transform: scale(1.2); /* Увеличиваем масштаб */
+}
+h1 {
+	font-family: Inter-SemiBold;
+	font-size: 30px;
+}
+h2 {
+	font-family: Inter-SemiBold;
+	font-size: 26px;
+}
+.sector1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	color: white;
+	font-family: Inter-Light;
+	font-size: 18px;
+	margin-top: 70px;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.column1 {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.column2 {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 500px;
+	align-self: flex-start;
+}
+.column3 {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
